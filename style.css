@@ -1,6 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
 
 /* 🌐 Global Reset */
+@font-face{
+  src: url(./BATTAMBANG-BOLD.TTF);
+  font-family: battambang;
+}
 * {
   margin: 0;
   padding: 0;
@@ -11,6 +15,7 @@
 body {
   background-color: #314158;
   color: white;
+  
 }
 
 a {
@@ -201,7 +206,7 @@ section {
 
 .rom_skills_all {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   
   
 }
@@ -229,6 +234,62 @@ section {
   transform: translate(3px,3px);
 }
 
+.conntect h2{
+  text-align: center;
+}
+.conntect  {
+  margin-top: 20px;
+}
+.conntect #fomr_conntect{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+.conntect #fomr_conntect input{
+  width: 200px;
+  min-height: 35px;
+  border-radius: 50px;
+  padding: 10px;
+  border: none; 
+  cursor: pointer;
+}
+.conntect #fomr_conntect input:hover{
+  border: 1px solid black;
+}
+
+
+.respact {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  background-color: rgb(108, 120, 130);
+  margin-top: 30px;
+  text-align: center;
+  color: white;
+  border-radius: 50px;
+}
+.conntectMe {
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.respact h4 {
+  font-family: battambang;
+}
+.conntectMe h4 {
+  font-family: battambang;
+}
+.conntectMe img{
+  box-shadow: 5px 5px 5px black;
+  border-radius: 50px;
+  transition: 0.3s;
+}
+.conntectMe img:hover {
+  box-shadow: none;
+  transform: translate(2px,2px);
+}
 
 /* mobile  */
 @media(max-width:767px) {
@@ -318,6 +379,21 @@ section {
   }
   .rom_skills_all {
     flex-wrap: wrap;
+  }
+  .img_text_body img{
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+  }
+  .conntect #fomr_conntect{
+    flex-wrap: wrap;
+}
+  .respact h4 {
+  font-size: 13px;
+  }
+   .respact h5 {
+  font-size: 10px;
   }
 }
  /* tablet  */
